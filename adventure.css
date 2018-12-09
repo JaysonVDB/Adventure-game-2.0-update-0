@@ -1,0 +1,6 @@
+#game-buttons > button{
+	position: absolute;
+	border: none;
+	width: 100px;
+	height: 100px;
+}
