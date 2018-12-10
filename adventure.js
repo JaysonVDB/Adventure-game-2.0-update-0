@@ -76,7 +76,7 @@
 				  titlew1.innerHTML = "Het spel is aan het laden"
 					setTimeout(function(){
 						levelKlaarzettenenzo();
-					}, 2000)
+					}, 8000)
 				  
 			}
 				}
@@ -85,7 +85,30 @@
 
 			
 				
+				function DeDood(){
 
+					achtergrond.setAttribute("src", "img/rip1key0.png");
+					titlew1.innerHTML = "Rip ya died, het spel restart zich over enkele seconden"
+					setTimeout(function(){
+							location.reload();
+				}, 5000)
+				}
+				function DeDood_1(){
+
+					achtergrond.setAttribute("src", "img/rip1key1.png");
+					titlew1.innerHTML = "Rip ya died, het spel restart zich over enkele seconden"
+					setTimeout(function(){
+							location.reload();
+				}, 5000)
+				}
+				function DeDood_2(){
+
+					achtergrond.setAttribute("src", "img/rip1key2.png");
+					titlew1.innerHTML = "Rip ya died, het spel restart zich over enkele seconden"
+					setTimeout(function(){
+							location.reload();
+				}, 5000)
+				}
 
 		
 				function levelKlaarzettenenzo(){
@@ -120,8 +143,6 @@
 
 					console.log("testbutton")
 					intersectie_1()
-
-					
 }
 
 
@@ -203,9 +224,9 @@
     			titlew1.innerHTML = "*fluit geluid*"
 
     				setTimeout(function(){
-    				buttonw1.style.visibility = "visible"
+    				buttonw1.style.visibility = "hidden"
     				buttonw1.innerHTML = "Vooruit";
-    				buttonw1.onclick =  window.alert("Je hebt een key nodig");
+    				
 
 					buttonw2.style.visibility = "visible";
     				buttonw2.innerHTML = "Achter";
@@ -219,6 +240,8 @@
 					buttonw4.style.visibility = "hidden"
     				buttonw4.innerHTML = "Rechts";
     				//buttonw4.onclick = x;
+
+    				window.alert("Je hebt een key nodig");
     			}, 100)
 				}
 
@@ -277,7 +300,7 @@
 
 				function death_1()
 				{
-    			achtergrond.setAttribute("src", "img/rip1key0.png");
+    			achtergrond.setAttribute("src", "img/death1key0.png");
 
     			titlew1.innerHTML = "Nee eet mij niet op. tjonge jonge jonge"
 
@@ -297,6 +320,10 @@
 					buttonw4.style.visibility = "hidden"
     				buttonw4.innerHTML = "Rechts";
     				//buttonw4.onclick = x;
+
+    				setTimeout(function(){
+    					DeDood()
+    				}, 3000)
 				}
 
 
@@ -457,7 +484,7 @@
 
 				function death_1_1()
 				{
-    			achtergrond.setAttribute("src", "img/rip1key1.png");
+    			achtergrond.setAttribute("src", "img/death1key1.png");
 
     			titlew1.innerHTML = "Stomme rot dolfijnen ;-;"
 
@@ -477,6 +504,10 @@
 					buttonw4.style.visibility = "hidden"
     				buttonw4.innerHTML = "Rechts";
     				//buttonw4.onclick = x;
+
+    				setTimeout(function(){
+    					DeDood_1()
+    				}, 3000)
 				}
 
 				function door_1_1()
@@ -562,7 +593,7 @@
     				//buttonw1.onclick = x;
 
 					buttonw2.style.visibility = "visible";
-    				buttonw2.innerHTML = "Pak de 2e key op";
+    				buttonw2.innerHTML = "Je hebt key nummero 2 nodig";
     				buttonw2.onclick = lock_2_2_2;
 
 
@@ -582,9 +613,8 @@
     			titlew1.innerHTML = "een deur"
 
     				setTimeout(function(){
-    				buttonw1.style.visibility = "visible"
+    				buttonw1.style.visibility = "hidden"
     				buttonw1.innerHTML = "Vooruit";
-    				buttonw1.onclick = window.alert("Je moet een 2e key vinden");
 
 					buttonw2.style.visibility = "visible";
     				buttonw2.innerHTML = "Achter";
@@ -598,6 +628,8 @@
 					buttonw4.style.visibility = "hidden"
     				buttonw4.innerHTML = "Rechts";
     				//buttonw4.onclick = x;
+
+    				window.alert("Je moet een 2e key vinden");
     			},100)
 				}
 
@@ -760,7 +792,7 @@ function intersectie_1_2()
 
 				function death_1_2()
 				{
-    			achtergrond.setAttribute("src", "img/rip1key2.png");
+    			achtergrond.setAttribute("src", "img/death1key2.png");
 
     			titlew1.innerHTML = "I dont wanna die, I dont wanna die."
 
@@ -780,6 +812,10 @@ function intersectie_1_2()
 					buttonw4.style.visibility = "hidden"
     				buttonw4.innerHTML = "Rechts";
     				//buttonw4.onclick = x;
+
+    				setTimeout(function(){
+    					DeDood_2()
+    				}, 3000)
 				}
 
 				function door_1_2()
@@ -958,6 +994,10 @@ function intersectie_1_2()
 					buttonw4.style.visibility = "hidden"
     				buttonw4.innerHTML = "Rechts";
     				//buttonw4.onclick = x;
+				setTimeout(function(){
+    				window.open('https://youtu.be/k9iYm9PEAHg?t=32', '_blank');
+    				
+    				}, 2000)
     			}
 
 				function einde2()
