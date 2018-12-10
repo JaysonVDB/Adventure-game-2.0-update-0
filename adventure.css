@@ -3,7 +3,6 @@
 	border: none;
 	width: 100px;
 	height: 100px;
-	margin-top: 15px;
 }
 
 #background1{
@@ -11,6 +10,6 @@
 
 }
 body{
-	background-color: eee5de;
+	background-color: #92a8d1;
 	text-align: center;
 	}
