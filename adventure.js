@@ -76,7 +76,7 @@
 				  titlew1.innerHTML = "Het spel is aan het laden"
 					setTimeout(function(){
 						levelKlaarzettenenzo();
-					}, 8000)
+					}, 5000)
 				  
 			}
 				}
