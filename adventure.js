@@ -995,7 +995,7 @@ function intersectie_1_2()
     				buttonw4.innerHTML = "Rechts";
     				//buttonw4.onclick = x;
 				setTimeout(function(){
-    				window.open('https://youtu.be/k9iYm9PEAHg?t=32', '_blank');
+    				window.open('https://youtu.be/k9iYm9PEAHg?t=32', "width=200,height=100");
     				
     				}, 2000)
     			}
